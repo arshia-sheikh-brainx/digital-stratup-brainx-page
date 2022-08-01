@@ -1116,6 +1116,9 @@ border: 0.5px solid #03A8F5
     }
   }
   @media all and (max-width: 992px) {
+    .core-services-div {
+        min-height: 270px;
+    }
     /* about  */
     .about-content-container {
       padding-right: 0px;
@@ -1361,7 +1364,7 @@ border: 0.5px solid #03A8F5
     .btn {
       font-size: 12px;
       letter-spacing: 0;
-      padding: 0px 29px;
+      padding: 0px 60px;
     }
     .hero .phone-no,
     .hero .phone-no a {
