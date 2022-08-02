@@ -31,7 +31,7 @@ header {
   position: sticky;
   top: 0;
   background: #fff;
-  z-index: 999999999999999;
+  z-index: 30;
 }
 header .navbar {
   /* padding-top: 0;
