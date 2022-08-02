@@ -130,7 +130,7 @@ header .navbar-toggler:focus {
   padding: 0 186px;
 }
 .hero .date {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 50px;
   font-weight: 900;
   font-family: Roboto Slab;
@@ -239,7 +239,7 @@ header .navbar-toggler:focus {
 /* about section  */
 
 .about-content-container {
-  padding-right: 150px;
+  padding-right: 100px;
 }
 .about-image-container {
   padding: 0 40px;
@@ -265,8 +265,8 @@ header .navbar-toggler:focus {
   display: block;
 }
 .about-list li {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
   font-family: Roboto Slab;
   font-weight: normal;
   color: #343434;
