@@ -44,22 +44,28 @@
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header border-0">
-              <svg xmlns="http://www.w3.org/2000/svg" id="cancel" width="35" height="35" viewBox="0 0 35 35" type="button" class='ms-auto' data-bs-dismiss="modal" aria-label="Close">
-                <path id="Path_57401" data-name="Path 57401" d="M0,0H35V35H0Z" fill="none"/>
-                <path id="Path_57402" data-name="Path 57402" d="M16.3,2A14.3,14.3,0,1,0,30.6,16.3,14.289,14.289,0,0,0,16.3,2Zm7.151,19.437-2.017,2.017L16.3,18.319l-5.135,5.135L9.151,21.437,14.286,16.3,9.151,11.168l2.017-2.017L16.3,14.286l5.135-5.135,2.017,2.017L18.319,16.3Z" transform="translate(1.198 1.198)" fill="#04599c"/>
-              </svg>
-            </div>
             <div class="modal-body">
-                <div class="heading">
+              <div class="row">
+                <div class="col-6 popup-img">
+                  <img src="collision/illustration@2x.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 content-con">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="cancel" width="35" height="35" viewBox="0 0 35 35" type="button" class='ms-auto' data-bs-dismiss="modal" aria-label="Close">
+                    <path id="Path_57401" data-name="Path 57401" d="M0,0H35V35H0Z" fill="none"/>
+                    <path id="Path_57402" data-name="Path 57402" d="M16.3,2A14.3,14.3,0,1,0,30.6,16.3,14.289,14.289,0,0,0,16.3,2Zm7.151,19.437-2.017,2.017L16.3,18.319l-5.135,5.135L9.151,21.437,14.286,16.3,9.151,11.168l2.017-2.017L16.3,14.286l5.135-5.135,2.017,2.017L18.319,16.3Z" transform="translate(1.198 1.198)" fill="#04599c"/>
+                  </svg>
+                  <div class="heading">
                     CONTACT US
                 </div>
+                <p class="text">Get In Touch & Earn 5 Hours Of Free Development</p>
                 <form action="" method="post">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12">
                     <input class="required form-control" id="name" required="required" type="text" name="lead[first_name]" class="form-control" placeholder="Name">
                 </div>
-                <div class="col-12 col-lg-6">
+                </div>
+                <div class="row">
+                <div class="col-12">
                     <input class="required form-control" id="phone" required="required" type="tel" name="lead[phone]" class="form-control" placeholder="Phone No.">
                 </div>
             </div>
@@ -73,11 +79,14 @@
                     <textarea class="form-control required" id="message" required="required" name="lead[message]" placeholder="Your Message Here..." rows="3"></textarea>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <input type="submit" value="Send Message" class="submit-btn">
+            <div class="row justify-content-center ">
+                <input type="submit" value="Send Message" class="submit-btn btn" >
             </div>
             
         </form>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -138,8 +147,7 @@
                 </g>
               </svg>
               <p>
-                Witness How We Solve Real-World Business Problems Through
-                Technology, Marketing And Innovation.
+                Witness how we provide scalable eCommerce experiences with the wide range of eCommerce platform solutions!
               </p>
               <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
               <div class="phone-no">
@@ -163,16 +171,16 @@
               <span class="subheading">TOOLS & TECHNOLOGIES </span> We Work With
             </h1>
             <div class="images-container d-flex justify-content-center flex-wrap">
-                <img src="collision/shopify.png" alt="shopify" class="img-fluid"/>
-              <img src="collision/bg-commerce.png" alt="bg-commerce" class="img-fluid"/>
-              <img src="collision/magento.png" alt="magento" class="img-fluid"/>
-              <img src="collision/sticky-io.png" alt="sticky-io" class="img-fluid"/>
-              <img src="collision/gorgias.png" alt="gorgias" class="img-fluid"/>
-              <img src="collision/everflow.png" alt="everflow" class="img-fluid"/>
-              <img src="collision/drupal.png" alt="drupal" class="img-fluid"/>
-              <img src="collision/woocommerce.png" alt="woocommerce" class="img-fluid"/>
-              <img src="collision/ultracart.png" alt="ultracart" class="img-fluid"/>
-              <img src="collision/wordpress.png" alt="wordpress" class="img-fluid"/>
+                <img src="collision/shopify.svg" alt="shopify" class="img-fluid"/>
+              <img src="collision/bg-commerce.svg" alt="bg-commerce" class="img-fluid"/>
+              <img src="collision/magento.svg" alt="magento" class="img-fluid"/>
+              <img src="collision/sticky-io.svg" alt="sticky-io" class="img-fluid"/>
+              <img src="collision/gorgias.svg" alt="gorgias" class="img-fluid"/>
+              <img src="collision/everflow.svg" alt="everflow" class="img-fluid"/>
+              <img src="collision/drupal.svg" alt="drupal" class="img-fluid"/>
+              <img src="collision/woocommerce.svg" alt="woocommerce" class="img-fluid"/>
+              <img src="collision/ultracart.svg" alt="ultracart" class="img-fluid"/>
+              <img src="collision/wordpress.svg" alt="wordpress" class="img-fluid"/>
             </div>
             <svg class="d-none d-sm-block w-100" xmlns="http://www.w3.org/2000/svg" width="1665.816" height="17" viewBox="0 0 1665.816 17">
               <g id="seperator" transform="translate(-127 -1592)">
@@ -432,202 +440,6 @@
         </div>
       </div>
     </section>
-    <!-- technology section  -->
-    <section class="industries">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-6 mx-auto technology-content">
-            <h4 class="title">INDUSTRIES</h4>
-            <h3 class="heading">We Work In</h3>
-            <p class="paragraph">
-              Our deep experience in these and many other industries helps us
-              rapidly deliver specialized solutions.
-            </p>
-          </div>
-        </div>
-        <div class="row my-2">
-          <div class="col-12">
-            <ul class="industries-btn">
-              <li>
-                <div>HealthTech</div>
-              </li>
-              <li>
-                <div>Real Estate</div>
-              </li>
-              <li>
-                <div>EdTech</div>
-              </li>
-              <li>
-                <div>FinTech</div>
-              </li>
-              <li>
-                <div>E-Commerce</div>
-              </li>
-              <li>
-                <div>Social Networking</div>
-              </li>
-              <li>
-                <div>Auto & Vehicle</div>
-              </li>
-              <li>
-                <div>iOT</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-            <div class="carousel">
-              <!-- copy-content    -->
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/health-tech.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">HealthTech</div>
-                  <div class="text">
-                    <p>
-                      We help our clients deliver better patient care through
-                      smart & innovative software offerings. We help you deliver
-                      solutions to enable ease of access to medical information
-                      for your patients, track their health status & reach out
-                      to them effectively.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/real-estate.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">Real Estate</div>
-                  <div class="text">
-                    <p>
-                      At BrainX we help build the right real estate management
-                      tools that can help you manage properties, teams &
-                      tenants. We will work with you using the latest tools &
-                      technologies to build solutions that helps you track
-                      revenue, commission & much more for your teams and see an
-                      overview of your organisation’s performance.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/ed-tech.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">EdTech</div>
-                  <div class="text">
-                    <p>
-                      We help our clients revolutionize education through modern
-                      technologies by delivering robust and secure E-Learning
-                      platforms. BrainX builds learning management systems
-                      (LMS), virtual classrooms, and other educational solutions
-                      using the latest tech stacks.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/fin-tech.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">FinTech</div>
-                  <div class="text">
-                    <p>
-                      BrainX offers consulting & development for custom software
-                      such as digital payment solutions, banking apps,
-                      accounting software consulting etc. We help fintech
-                      businesses with all aspects of their operations including
-                      strategy development, product design & management, and
-                      technical support.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/e-commerce.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">E-Commerce</div>
-                  <div class="text">
-                    <p>
-                      As a member of Shopify partner program, BrainX team has
-                      extensive experience in e-commerce solutions. We provide
-                      development, deployment and maintenance on Shopify &
-                      WooCommerce. We will work with you using the right tools
-                      to build an online store that captures more sales and
-                      helps you grow faster than ever before.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/social-networking.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">Social Networking</div>
-                  <div class="text">
-                    <p>
-                      We help our clients build engaging social networking
-                      platforms through latest technologies. We are expert in
-                      build chatting, social & customer support applications
-                      that connects & engage people effectively through mobile &
-                      web platforms.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/auto-and-vehicle.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">Auto & Vehicle</div>
-                  <div class="text">
-                    <p>
-                      We build customised solutions that makes driving more
-                      trackable & secure. From fleet tracking systems to apps
-                      that reduces the distraction of using mobile, we have
-                      developed several customised solutions for our clients to
-                      help them grow their auto business faster than ever
-                      before.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="icon">
-                  <img src="collision/iot.png" class="img-fluid"/>
-                </div>
-                <div class="content">
-                  <div class="title">iOT</div>
-                  <div class="text">
-                    <p>
-                      Our consultants devise strategies that align with all your
-                      tech needs whether you have just one part of an IoT puzzle
-                      missing or require a full-scale solution. We build
-                      customized mobile and web apps that harness the power of
-                      connected devices to empower enterprises with
-                      next-generation IoT products.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- end copy content  -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
 
     <!-- Rich Text section  -->
     <section class="rich-text">

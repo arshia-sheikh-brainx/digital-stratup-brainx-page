@@ -933,40 +933,63 @@ footer .icon-setting {
 /* modal  */
 #contactModal .heading {
   text-align: center;
-  font: normal normal bold 40px/52px Roboto Slab;
+  font: normal normal bold 35px/52px Roboto Slab;
+  letter-spacing: 0px;
+  color: #04599C;
+  /* margin-top: -44px; */
+  /* margin-bottom: 28px; */
+}
+#contactModal .text {
+  text-align: center;
+  font: normal normal normal 16px/25px Roboto Slab;
+  letter-spacing: 0px;
   color: #000000;
-  margin-top: -44px;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
 }
 #contactModal .modal-content {
-  background: #e3e3e3;
+  /* background: #e3e3e3; */
   border-radius: 20px;
 }
 #contactModal .form-control {
-  margin: 15px 0;
+  margin: 7px 0;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #cacaca;
   border-radius: 10px;
-  line-height: 31px;
+  line-height: 50px;
 }
 #contactModal .submit-btn {
-    font: normal normal bold 14px/50px Nunito Sans;
-    color: #dedede;
-    background: #04599c 0% 0% no-repeat padding-box;
-    box-shadow: 3px 3px 20px #818d9799;
-    border: none;
-    width: fit-content;
-    padding: 0 45px;
-    margin-top: 20px;
-    border-radius: 50px;
+  font: normal normal bold 14px/60px Nunito Sans;
+  color: #dedede;
+  background: #04599c 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 20px #818d9799;
+  border: none;
+  width: fit-content;
+  padding: 0 45px;
+  margin-top: 30px;
+  border-radius: 50px;
 
+}
+#contactModal svg#cancel {
+  margin-left: auto !important;
+  position: relative;
+  left: calc(100% - 60px );
+  top: 16px;
+}
+#contactModal {
+  position: sticky;
+  width: 100vw;
+  z-index: 999999999999999;
+  height: 100vh;
+}
+#contactModal form{
+  padding: 0 50px 50px 50px;
 }
 @media screen and (min-width: 700px) {
   #contactModal .modal-dialog {
-    max-width: 700px;
+    max-width: 1290px;
   }
   #contactModal .modal-body {
-    padding: 1rem 40px 60px;
+    padding: 0;
   }
 }
 
@@ -1103,6 +1126,14 @@ footer .icon-setting {
   .carousel .card {
     min-height: 600px !important;
   }
+}
+@media all and (max-width: 1200px) {
+.popup-img{
+  display: none;
+}
+.content-con{
+  width: 100%;
+}
 }
 @media all and (max-width: 1200px) {
   /* hero  */
@@ -1376,6 +1407,9 @@ footer .icon-setting {
   }
 }
 @media all and (max-width: 576px) {
+  #contactModal form {
+    padding: 0 20px 50px 20px;
+}
     #contactModal .form-control {
         margin: 10px 0;
     }    
