@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- sweet alert  -->
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- stylesheet -->
  <link rel="stylesheet" href="style.css">
     <!-- Meta tag for seo -->
@@ -39,6 +41,47 @@
   </head>
 
   <body>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <svg xmlns="http://www.w3.org/2000/svg" id="cancel" width="35" height="35" viewBox="0 0 35 35" type="button" class='ms-auto' data-bs-dismiss="modal" aria-label="Close">
+                <path id="Path_57401" data-name="Path 57401" d="M0,0H35V35H0Z" fill="none"/>
+                <path id="Path_57402" data-name="Path 57402" d="M16.3,2A14.3,14.3,0,1,0,30.6,16.3,14.289,14.289,0,0,0,16.3,2Zm7.151,19.437-2.017,2.017L16.3,18.319l-5.135,5.135L9.151,21.437,14.286,16.3,9.151,11.168l2.017-2.017L16.3,14.286l5.135-5.135,2.017,2.017L18.319,16.3Z" transform="translate(1.198 1.198)" fill="#04599c"/>
+              </svg>
+            </div>
+            <div class="modal-body">
+                <div class="heading">
+                    CONTACT US
+                </div>
+                <form action="" method="post">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <input class="required form-control" id="name" required="required" type="text" name="lead[first_name]" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <input class="required form-control" id="phone" required="required" type="tel" name="lead[phone]" class="form-control" placeholder="Phone No.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input class="form-control required" id="email" required="required" type="email" name="lead[email]" placeholder="Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <textarea class="form-control required" id="message" required="required" name="lead[message]" placeholder="Your Message Here..." rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <input type="submit" value="Send Message" class="submit-btn">
+            </div>
+            
+        </form>
+            </div>
+          </div>
+        </div>
+        </div>
     <!-- header -->
     <header class="header">
       <div class="container-fluid">
@@ -47,7 +90,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
               <div class="container-fluid flex-col p-0 p-lg-auto m-0">
                 <a class="navbar-brand logo me-auto" href="/"><img class="img-fluid" src="collision/brainx_logo.svg" alt="logo"/></a>
-                <a href="https://www.brainxtech.com/contact_us" class="ms-auto text-decoration-none d-inline d-md-none est-mobile-btn">
+                <a  data-bs-toggle="modal" data-bs-target="#contactModal" class="ms-auto text-decoration-none d-inline d-md-none est-mobile-btn">
                   <div class="estimate-botton">
                     <p class="estimate-p">Contact Us</p>
                   </div>
@@ -55,7 +98,7 @@
                 <div>
              
                 </div>
-                <a href="/contact_us" class="text-decoration-none d-none d-md-block est-desktop-btn">
+                <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="text-decoration-none d-none d-md-block est-desktop-btn">
                   <div class="estimate-botton">
                     <p class="estimate-p">Contact Us</p>
                   </div>
@@ -98,7 +141,7 @@
                 Witness How We Solve Real-World Business Problems Through
                 Technology, Marketing And Innovation.
               </p>
-              <a href="https://calendly.com/collission/30min" class="btn">GET IN TOUCH</a>
+              <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
               <div class="phone-no">
                 *Text Us At: <a href="tel:9056509984">905-650-9984</a>
               </div>
@@ -175,7 +218,7 @@
                 </li>
 
               </ul>
-              <a href="https://calendly.com/collission/30min" class="btn">GET IN TOUCH</a>
+              <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
               <div class="phone-no">
                 *Text Us At: <a href="tel:9056509984">905-650-9984</a>
               </div>
@@ -205,49 +248,49 @@
                     <div class="services-desc">
                         An eCommerce platform for building online stores that is highly secure and easy to manage with a wide range of features and themes.
                     </div>
-                    <a href="" class="services-link">Hire Dedicated Shopify Developers from BrainX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Dedicated Shopify Developers from BrainX</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">BigCommerce</div>
                     <div class="services-desc">
                         A highly versatile ecommerce solution for building online stores at an enterprize level with extensibility and scalability.
                     </div>
-                    <a href="" class="services-link">Hire Our Bigcommerce Developers from BrainX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Our Bigcommerce Developers from BrainX</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">Ultracart</div>
                     <div class="services-desc">
                         Ultracart offers a cost-friendly and robust platform for growing your online business with an abundance of features and integration.
                     </div>
-                    <a href="" class="services-link">Hire Our UltraCart BrainX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Our UltraCart BrainX</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">Wordpress</div>
                     <div class="services-desc">
                         WordPress is a free and open-source content management system used to create beautiful websites, blogs, online stores and more!
                     </div>
-                    <a href="" class="services-link">Hire Our Expert Wordpress Developers from BrainX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Our Expert Wordpress Developers from BrainX</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">Magento</div>
                     <div class="services-desc">
                         Magento is a modern cloud eCommerce platform with an open-source ecosystem that powers thousands of retailers and brands.
                     </div>
-                    <a href="" class="services-link">Hire BrainX Magento Experts</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire BrainX Magento Experts</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">Drupal</div>
                     <div class="services-desc">
                         Drupal is a sophisticated and functional CMS capable of handling thousands of concurrent users and provides powerful in-class security.
                     </div>
-                    <a href="" class="services-link">Hire Drupal Developers from BrianX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Drupal Developers from BrianX</a>
                 </div>
                 <div class="col-12 col-lg-3 core-services-div">
                     <div class="services-title">Sticky.io</div>
                     <div class="services-desc">
                         Sticky offers a robust subscription platform for growing your online business with an abundance of features and integration.
                     </div>
-                    <a href="" class="services-link">Hire Sticky Developers From BrianX</a>
+                    <a data-bs-toggle="modal" data-bs-target="#contactModal" href="" class="services-link">Hire Sticky Developers From BrianX</a>
                 </div>
             </div>
         </div>
@@ -255,7 +298,7 @@
     <section class="rich-text">
         <div class="container">
           <div class="text-center">
-            <a href="https://calendly.com/collission/30min" class="btn">GET IN TOUCH</a>
+            <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
             <div class="phone-no">
               *Text Us At: <a href="tel:9056509984">905-650-9984</a>
             </div>
@@ -382,7 +425,7 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="https://calendly.com/collission/30min" class="btn">GET IN TOUCH</a>
+          <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
           <div class="phone-no">
             *Text Us At: <a href="tel:9056509984">905-650-9984</a>
           </div>
@@ -601,7 +644,7 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="https://calendly.com/collission/30min" class="btn">GET IN TOUCH</a>
+          <a data-bs-toggle="modal" data-bs-target="#contactModal"  class="btn">GET IN TOUCH</a>
           <div class="phone-no">
             *Text Us At: <a href="tel:9056509984">905-650-9984</a>
           </div>
@@ -619,11 +662,11 @@
                 <rect id="Rectangle_627" data-name="Rectangle 627" width="1920" height="101" transform="translate(0 8276)" fill="#fff"/>
               </clipPath>
             </defs>
-            <g id="collision-2022" transform="translate(0 -8276)" clip-path="url(#clip-path)">
+            <g id="collision-2022" transform="translate(0 -8276)" opacity="0.5" clip-path="url(#clip-path)">
               <g id="Group_98227" data-name="Group 98227" transform="translate(-13 6)">
-                <text id="Digital_Startup_2022." data-name="Digital Startup 2022." transform="translate(389 8275)" fill="none" stroke="#707070" stroke-width="1" font-size="90" font-family="Roboto Slab" font-weight="800" letter-spacing="0.05em"><tspan x="0" y="94">DIGITAL STARTUP 2022.</tspan></text>
-                <text id="Digital_Startup_2022.-2" data-name="Digital Startup 2022." transform="translate(1557 8275)" fill="none" stroke="#707070" stroke-width="1" font-size="90" font-family="Roboto Slab" font-weight="800" letter-spacing="0.05em"><tspan x="0" y="94">DIGITAL STARTUP 2022.</tspan></text>
-                <text id="Digital_Startup_2022.-3" data-name="Digital Startup 2022." transform="translate(-782 8275)" fill="none" stroke="#707070" stroke-width="1" font-size="90" font-family="Roboto Slab" font-weight="800" letter-spacing="0.05em"><tspan x="0" y="94">DIGITAL STARTUP 2022.</tspan></text>
+                <path id="Path_57673" data-name="Path 57673" d="M1.758,94V84.991l6.724-1.626V40.738l-6.724-1.67V30.016H31.729a29.152,29.152,0,0,1,15.337,4.021A28.131,28.131,0,0,1,57.524,45.155,34.3,34.3,0,0,1,61.3,61.524v1.011A34.3,34.3,0,0,1,57.524,78.9,27.975,27.975,0,0,1,47.065,90a29.276,29.276,0,0,1-15.337,4ZM23.906,82.311h7.031a13.278,13.278,0,0,0,8.174-2.461A15.018,15.018,0,0,0,44.1,72.928a29.228,29.228,0,0,0,1.692-10.393V61.48A29.046,29.046,0,0,0,44.1,51.109a15.027,15.027,0,0,0-4.988-6.9,13.278,13.278,0,0,0-8.174-2.461H23.906ZM70.857,94V84.991l6.636-1.406V40.475l-6.636-1.406V30.016H99.51v9.053l-6.636,1.406v43.11l6.636,1.406V94Zm66.99.923q-9.932,0-16.809-3.867a25.9,25.9,0,0,1-10.481-10.745,33.835,33.835,0,0,1-3.6-15.93v-2.9a37.926,37.926,0,0,1,3.56-16.831,26.908,26.908,0,0,1,10.327-11.426q6.768-4.131,16.348-4.131a45.07,45.07,0,0,1,13.14,2,31.676,31.676,0,0,1,11.6,6.306V52.384H150.943l-2.329-8.13a11.222,11.222,0,0,0-4.241-2.549,17.782,17.782,0,0,0-6.174-1.011,14.515,14.515,0,0,0-8.833,2.615,15.709,15.709,0,0,0-5.339,7.273,30.189,30.189,0,0,0-1.78,10.811v2.988a24.929,24.929,0,0,0,1.868,10.063,14.589,14.589,0,0,0,5.471,6.592,16.021,16.021,0,0,0,8.877,2.329,26.7,26.7,0,0,0,5.493-.571,20.967,20.967,0,0,0,4.263-1.274V73.258l-7.207-.879V61.744h22.676V88.287a39.158,39.158,0,0,1-11.711,4.988A57.594,57.594,0,0,1,137.848,94.923ZM173.109,94V84.991l6.636-1.406V40.475l-6.636-1.406V30.016h28.652v9.053l-6.636,1.406v43.11l6.636,1.406V94Zm50.774,0V84.991l6.68-1.406V41.969h-9.888l-.4,6.9H208.635V30.016h59.458V48.868H256.315l-.352-6.9h-9.976V83.585l6.68,1.406V94Zm43.963,0V84.991l4.482-.659L291.4,30.016h16.7l19.116,54.316,4.482.659V94H307.793V84.991l4.175-.791-1.934-6.943H289.468L287.622,84.2l4.175.791V94ZM292.72,66.446h14.019l-6.24-19.38-.7-2.241h-.264l-.747,2.461ZM338.968,94V84.991l6.636-1.406V40.475l-6.636-1.406V30.016h30.146v9.053l-8.086,1.406v41.7h15.205l.352-8.921h11.777V94Zm111.349.923a58.3,58.3,0,0,1-13.887-1.494A37.122,37.122,0,0,1,424.345,87.8V71.192h11.909l1.318,8.525a10.807,10.807,0,0,0,4.966,2.659,26.767,26.767,0,0,0,7.778,1.077,14.422,14.422,0,0,0,4.922-.725,6.159,6.159,0,0,0,2.988-2.131,5.643,5.643,0,0,0,1.011-3.384,6.2,6.2,0,0,0-.945-3.384,9.523,9.523,0,0,0-3.1-2.834,35.186,35.186,0,0,0-5.8-2.747A89.509,89.509,0,0,1,435.9,62.887a20.878,20.878,0,0,1-7.844-6.46,15.972,15.972,0,0,1-2.571-9.272,14.9,14.9,0,0,1,3.032-9.294,20.3,20.3,0,0,1,8.35-6.262,32.174,32.174,0,0,1,12.173-2.417,46.29,46.29,0,0,1,13.843,1.56,31.971,31.971,0,0,1,10.635,5.251V51.417H462.094l-1.8-8.569a19.23,19.23,0,0,0-4.263-1.362,27.1,27.1,0,0,0-5.889-.615,14.91,14.91,0,0,0-4.768.7,7.3,7.3,0,0,0-3.3,2.109,5.2,5.2,0,0,0-1.208,3.516,4.94,4.94,0,0,0,1.011,3.054,10.646,10.646,0,0,0,3.56,2.681,69.961,69.961,0,0,0,7.119,3.1q10.9,3.208,16.545,8.02t5.647,13.074a15.294,15.294,0,0,1-3.076,9.646,19.087,19.087,0,0,1-8.569,6.064A35.9,35.9,0,0,1,450.316,94.923ZM496.828,94V84.991l6.68-1.406V41.969H493.62l-.4,6.9H481.579V30.016h59.458V48.868H529.26l-.352-6.9h-9.976V83.585l6.68,1.406V94Zm43.963,0V84.991l4.482-.659,19.072-54.316h16.7l19.116,54.316,4.482.659V94H580.737V84.991l4.175-.791-1.934-6.943H562.412L560.566,84.2l4.175.791V94Zm24.873-27.554h14.019l-6.24-19.38-.7-2.241h-.264l-.747,2.461ZM611.912,94V84.991l6.636-1.406V40.475l-6.636-1.406v-9.1h31.465a33,33,0,0,1,13.184,2.417,19.438,19.438,0,0,1,8.613,6.877,18.343,18.343,0,0,1,3.032,10.569,19.217,19.217,0,0,1-3.054,10.459,22.472,22.472,0,0,1-6.835,6.842c-.319.213-.916.574-1.537.915a24.428,24.428,0,0,1-12.129,2.878l-.211,0L633.973,70.8V83.585l6.636,1.406V94Zm40.518,0L644.44,70.926a28.876,28.876,0,0,0,7.35-.83,26.027,26.027,0,0,0,6.526-2.96L665,83.5l6.064,1.538V94ZM633.973,58.976h9.58q4.482,0,6.9-2.087a7.549,7.549,0,0,0,2.417-6.042,8.925,8.925,0,0,0-2.461-6.57q-2.461-2.483-7.031-2.483h-9.4ZM691.646,94V84.991l6.68-1.406V41.969h-9.888l-.4,6.9H676.4V30.016h59.458V48.868H724.078l-.352-6.9h-9.976V83.585l6.68,1.406V94Zm83.909.923a35.95,35.95,0,0,1-14.392-2.659,20.844,20.844,0,0,1-9.47-7.8,22.586,22.586,0,0,1-3.34-12.568V40.475l-6.592-1.406V30.016h28.652v9.053l-6.636,1.406V71.9a13.381,13.381,0,0,0,1.362,6.394,8.529,8.529,0,0,0,3.977,3.757,14.833,14.833,0,0,0,6.35,1.23,15.184,15.184,0,0,0,6.482-1.23A8.414,8.414,0,0,0,785.9,78.29a13.565,13.565,0,0,0,1.34-6.394V40.475l-6.592-1.406V30.016h28.652v9.053l-6.636,1.406V71.9a22.013,22.013,0,0,1-3.428,12.458,21.662,21.662,0,0,1-9.514,7.866A34.65,34.65,0,0,1,775.556,94.923Zm40.8-.923V84.991l6.636-1.406V40.475l-6.636-1.406V30.016h31.113A30.566,30.566,0,0,1,860.739,32.7a20.468,20.468,0,0,1,8.679,7.449,20.121,20.121,0,0,1,3.054,11.1,20.012,20.012,0,0,1-3.054,11.074,20.234,20.234,0,0,1-8.679,7.383,31,31,0,0,1-13.271,2.637h-9.053v11.25l6.636,1.406V94Zm22.061-33.486h9.053q4.7,0,7.141-2.571a9.218,9.218,0,0,0,2.439-6.614,9.794,9.794,0,0,0-2.439-6.855q-2.439-2.681-7.141-2.681h-9.053ZM907.313,94V84.112L927.923,62.4a57.505,57.505,0,0,0,4.395-5.581,20.6,20.6,0,0,0,2.351-4.438,11.558,11.558,0,0,0,.725-3.911,8.438,8.438,0,0,0-1.67-5.3A5.92,5.92,0,0,0,928.714,41a6.1,6.1,0,0,0-5.405,2.571,12.079,12.079,0,0,0-1.758,6.921H906.478l-.088-.264a20.481,20.481,0,0,1,2.571-10.723,19.593,19.593,0,0,1,7.8-7.6,24.452,24.452,0,0,1,12-2.812,26.939,26.939,0,0,1,11.843,2.4,17.749,17.749,0,0,1,7.6,6.724,18.963,18.963,0,0,1,2.659,10.129,19.241,19.241,0,0,1-1.34,7.273,28.675,28.675,0,0,1-4.395,7.1q-3.054,3.779-8.152,9.141l-9.668,10.239.088.22h12.7l.659-5.317h11.558V94Zm77.845.923q-10.415,0-16.479-6.592t-6.064-19.556V55.284q0-12.92,6.064-19.556t16.392-6.636q10.239,0,16.326,6.636t6.086,19.556V68.775q0,12.964-6.042,19.556T985.157,94.923Zm0-11.733a5.688,5.688,0,0,0,5.186-3.1q1.8-3.1,1.8-10.437V54.317q0-7.207-1.846-10.327a6.027,6.027,0,0,0-10.547-.022q-1.8,3.1-1.8,10.349V69.654q0,7.383,1.8,10.459A5.871,5.871,0,0,0,985.157,83.189ZM1017.826,94V84.112l20.61-21.709a57.505,57.505,0,0,0,4.395-5.581,20.6,20.6,0,0,0,2.351-4.438,11.558,11.558,0,0,0,.725-3.911,8.438,8.438,0,0,0-1.67-5.3,5.92,5.92,0,0,0-5.01-2.175,6.1,6.1,0,0,0-5.405,2.571,12.079,12.079,0,0,0-1.758,6.921h-15.073l-.088-.264a20.481,20.481,0,0,1,2.571-10.723,19.593,19.593,0,0,1,7.8-7.6,24.452,24.452,0,0,1,12-2.812,26.939,26.939,0,0,1,11.843,2.4,17.749,17.749,0,0,1,7.6,6.724,18.963,18.963,0,0,1,2.659,10.129,19.241,19.241,0,0,1-1.34,7.273,28.675,28.675,0,0,1-4.395,7.1q-3.054,3.779-8.152,9.141l-9.668,10.239.088.22h12.7l.659-5.317h11.558V94Zm54.554,0V84.112L1092.99,62.4a57.505,57.505,0,0,0,4.395-5.581,20.6,20.6,0,0,0,2.351-4.438,11.558,11.558,0,0,0,.725-3.911,8.438,8.438,0,0,0-1.67-5.3,5.92,5.92,0,0,0-5.01-2.175,6.1,6.1,0,0,0-5.405,2.571,12.079,12.079,0,0,0-1.758,6.921h-15.073l-.088-.264a20.481,20.481,0,0,1,2.571-10.723,19.593,19.593,0,0,1,7.8-7.6,24.452,24.452,0,0,1,12-2.812,26.939,26.939,0,0,1,11.843,2.4,17.749,17.749,0,0,1,7.6,6.724,18.963,18.963,0,0,1,2.659,10.129,19.241,19.241,0,0,1-1.34,7.273,28.675,28.675,0,0,1-4.395,7.1q-3.054,3.779-8.152,9.141l-9.668,10.239.088.22h12.7l.659-5.317h11.558V94Zm56.927,0V81.256h15.337V94Z" transform="translate(389 8275)" fill="none" stroke="#707070" stroke-width="1"/>
+                <text id="Digital_Startup_2022." data-name="Digital Startup 2022." transform="translate(1557 8275)" fill="none" stroke="#707070" stroke-width="1" font-size="90" font-family="Roboto Slab" font-weight="800" letter-spacing="0.05em"><tspan x="0" y="94">DIGITAL STARTUP 2022.</tspan></text>
+                <text id="Digital_Startup_2022.-2" data-name="Digital Startup 2022." transform="translate(-782 8275)" fill="none" stroke="#707070" stroke-width="1" font-size="90" font-family="Roboto Slab" font-weight="800" letter-spacing="0.05em"><tspan x="0" y="94">DIGITAL STARTUP 2022.</tspan></text>
               </g>
             </g>
           </svg>
@@ -649,7 +692,7 @@
           </div>
           <div class="col-md-5 col-xs-12 footer-3col">
             <div class="row">
-              <a href="/contact_us" class="text-decoration-none footer-contact-a">
+              <a data-bs-toggle="modal" data-bs-target="#contactModal" class="text-decoration-none footer-contact-a">
                 <div class="contact-div">CONTACT US</div>
               </a>
             </div>
@@ -783,6 +826,15 @@
           draggable: false,
           focusOnSelect: true,
         });
+        // form alert 
+        $("form").submit(function(){
+            Swal.fire(
+        'Your message has been submitted.',
+        '',
+        'success'
+      )
+});
+       
       });
     </script>
   </body>
